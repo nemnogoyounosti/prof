@@ -1,0 +1,52 @@
+@import "../misc/bootstrap";
+
+.pog-stages{
+  position: relative;
+  height: auto;
+  margin-top: 70px;
+
+  @include media-max(lg){
+    margin-top: 50px;
+  }
+}
+
+.pog-stages__top{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 30px 60px 30px 60px;
+  text-align: center;
+  position: relative;
+
+  @include media-max(lg){
+    padding: 30px 20px;
+  }
+}
+
+.pog-stages__img{
+  img{
+    max-width: 100%;
+    object-fit: cover;
+    min-height: auto;
+  }
+
+  @include media-max(lg){
+    display: none;
+  }
+}
+
+.pog-stages__bottom {
+  margin-top: 20px;
+  overflow: auto;
+
+  img{
+    max-width: 100%;
+    object-fit: cover;
+    min-height: auto;
+
+    @include media-max(lg){
+      width: 100%;
+      max-width: 924px;
+      min-width: 924px;
+    }
+  }
+}

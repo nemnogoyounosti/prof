@@ -1,0 +1,23 @@
+@import "../misc/bootstrap";
+
+.pog-screen{
+  position: relative;
+  height: auto;
+  margin-top: 70px;
+
+  @include media-max(lg){
+    margin-top: 50px;
+  }
+}
+
+.pog-screen__img{
+
+  position: relative;
+  z-index: 5;
+
+  img{
+    max-width: 100%;
+    object-fit: cover;
+    min-height: auto;
+  }
+}

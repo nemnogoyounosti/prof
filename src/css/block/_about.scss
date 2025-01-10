@@ -1,0 +1,65 @@
+@import "../misc/bootstrap";
+
+.pog-about{
+  position: relative;
+  height: auto;
+
+  margin-top: 100px;
+
+  @include media-max(lg){
+    margin-top: 50px;
+  }
+}
+
+.pog-about__content{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 30px 45px 30px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-max(lg){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+  }
+}
+
+.pog-about__img{
+
+  min-width: 317px;
+  margin-right: 50px;
+
+  @include media-max(lg){
+    margin-right: 0;
+    min-width: auto;
+  }
+
+  img{
+    max-width: 100%;
+    min-height: auto;
+    object-fit: cover;
+  }
+}
+
+.pog-about__text{
+  width: 100%;
+  max-width: 670px;
+
+  @include media-max(lg){
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  h2{
+    margin-bottom: 20px;
+  }
+
+  p:last-child{
+    margin-top: 25px;
+  }
+
+}

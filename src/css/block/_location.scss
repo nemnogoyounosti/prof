@@ -1,0 +1,78 @@
+@import "../misc/bootstrap";
+
+.pog-location{
+  position: relative;
+  height: auto;
+  margin-top: 50px;
+}
+
+.pog-location__content{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 30px 60px;
+
+  @include media-max(lg){
+    padding: 30px 20px;
+  }
+}
+
+.pog-location__top{
+
+  width: 100%;
+  max-width: 575px;
+
+  @include media-max(lg){
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  h2{
+    margin-bottom: 20px;
+  }
+}
+
+.pog-location__item--title{
+  margin-top: 15px;
+}
+
+.pog-location__bottom{
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+
+  @include media-max(lg){
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 739px){
+    gap: 35px;
+  }
+}
+
+.pog-location__item--desk{
+
+  p{
+    color: #8e8e93;
+  }
+}
+
+.pog-location__item{
+  width: 100%;
+  max-width: 309px;
+
+  @media (max-width: 739px){
+    max-width: 340px;
+  }
+}
+
+.pog-location__item--icon{
+
+  @include media-max(lg){
+    display: inline-block;
+  }
+}

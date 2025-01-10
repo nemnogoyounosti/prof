@@ -1,0 +1,75 @@
+@import "bootstrap";
+
+.pog{
+  font-family: "Roboto", serif;
+  font-size: $baseFontSize;
+  line-height: 1.2;
+  background: #010103;
+  color: #fff;
+  margin-bottom: 150px;
+}
+
+h1, .h1{
+  font-family: "Righteous", serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  margin-bottom: 5px;
+
+  @include media-max(lg){
+    font-size: 34px;
+  }
+}
+
+h2, .h2{
+  font-family: "Exo 2", serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 5px;
+
+  @include media-max(lg){
+    font-size: 34px;
+  }
+}
+
+h3, .h3{
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h4, .h4{
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 1.43em;
+  text-transform: uppercase;
+  color: #fffefe;
+  margin: 0;
+
+  @include media-max(lg){
+    letter-spacing: .8em;
+  }
+
+  @media (max-width: 800px){
+    letter-spacing: .7em;
+  }
+}
+
+h5, .h5{
+  font-weight: 700;
+  font-size: 18px;
+  color: #6fe0f3;
+  margin-bottom: 10px;
+}
+
+p{
+  line-height: 150%;
+  margin: 0;
+  color: white;
+  letter-spacing: 0.02em;
+}

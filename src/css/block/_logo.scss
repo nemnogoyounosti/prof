@@ -1,0 +1,31 @@
+@import "../misc/bootstrap";
+
+.logo {
+  position: relative;
+
+  background-image: url("../../images/logo.png");
+  background-image: image-set(
+                  url("../../images/logo.webp") type("image/webp") 1x,
+                  url("../../images/logo@2x.webp") type("image/webp") 2x,
+                  url("../../images/logo.png") type("image/png") 1x,
+                  url("../../images/logo@2x.png") type("image/png") 2x
+  );
+  background-repeat: no-repeat;
+
+  height: 215px;
+  display: block;
+  width: 100%;
+  background-position: center top;
+  background-size: contain;
+
+  @media (max-width: 800px){
+    height: 135px;
+  }
+}
+
+.pog-logo{
+  padding-top: 50px;
+  position: relative;
+}
+
+

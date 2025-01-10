@@ -1,0 +1,168 @@
+@import "../misc/bootstrap";
+
+.pog-description{
+  position: relative;
+  height: auto;
+
+  margin-top: 140px;
+
+  @include media-max(lg){
+    margin-top: 50px;
+  }
+}
+
+.pog-description__content{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 30px 45px 30px 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-max(lg){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+  }
+}
+
+.pog-description__img{
+
+  width: 100%;
+  min-width: 451px;
+  max-width: 451px;
+
+  @include media-max(lg){
+    width: auto;
+    min-width: auto;
+    max-width: none;
+  }
+
+  img{
+    max-width: 100%;
+    min-height: auto;
+    object-fit: cover;
+  }
+}
+
+.pog-description__text{
+  width: 100%;
+  max-width: 560px;
+
+  @include media-max(lg){
+    text-align: center;
+  }
+
+  h2{
+    margin-bottom: 20px;
+  }
+
+}
+
+.pog-description__img--elem1{
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+
+  @include media-max(lg){
+    position: relative;
+    right: 0;
+    bottom: -36px;
+  }
+}
+
+.pog-description__img--elem2{
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.pog-description__img--elem3{
+  position: absolute;
+  right: 50px;
+  top: -170px;
+  z-index: 10;
+
+  @media (max-width: 1069px){
+    top: -140px;
+  }
+
+  @include media-max(lg){
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+  }
+}
+
+.pog-description__2{
+  margin-top: 200px;
+
+  @include media-max(lg){
+    margin-top: 50px;
+  }
+}
+
+.pog-description__text--2{
+  width: 100%;
+  max-width: 580px;
+}
+
+.pog-description__img--2{
+  width: 100%;
+  max-width: 328px;
+  min-width: 328px;
+
+  @include media-max(lg){
+    width: auto;
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+.pog-description__2 .pog-description__content{
+  @include media-max(lg){
+    padding-bottom: 0;
+  }
+}
+
+.pog-description__img--elem4{
+  position: absolute;
+  right: 50px;
+  top: -170px;
+  z-index: 10;
+
+  @include media-max(lg){
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+.pog-description__3{
+  margin-top: 70px;
+
+  @include media-max(lg){
+    margin-top: 50px;
+  }
+}
+
+.pog-description__3 .pog-description__content{
+  @include media-max(lg){
+    padding-bottom: 0;
+  }
+}
+
+.pog-description__img--elem5{
+  position: absolute;
+  right: 10px;
+  top: -50px;
+
+  @include media-max(lg){
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
